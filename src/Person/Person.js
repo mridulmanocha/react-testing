@@ -1,8 +1,9 @@
 import React from 'react'
 
-const person = () => {
+const person = (props) => {
+    console.log(props   )
     return (
-    <p>I'm a person</p>
+    <p onClick={props.click}>My name is {props.name}</p>
     )
 };
 
